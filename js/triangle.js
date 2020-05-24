@@ -1,4 +1,5 @@
 let margin = { top: 20, right: 20, bottom: 30, left: 40 }
+
 let width = 1000 - margin.left - margin.right
 let height = 1000 - margin.top - margin.bottom
 let lineStroke = 'black'
