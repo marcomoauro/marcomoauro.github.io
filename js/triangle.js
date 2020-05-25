@@ -1,8 +1,3 @@
-let margin = { top: 20, right: 20, bottom: 30, left: 40 }
-let width = 1000 - margin.left - margin.right
-let height = 1000 - margin.top - margin.bottom
-let lineStroke = 'black'
-let lineWidth = '5'
 let animationDuration = 1000
 
 d3.json("data/triangles.json")
@@ -10,8 +5,8 @@ d3.json("data/triangles.json")
 
     let createSvg = () =>
       d3.select("body").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr("width", 1200)
+        .attr("height", 1500)
 
     let drawTriangles = (dataset) => {
       let triangleGroups = svg.selectAll('.triangle').data(dataset)
@@ -32,9 +27,6 @@ d3.json("data/triangles.json")
         .attr('y1', element => topY(element))
         .attr('x2', element => downRightX(element))
         .attr('y2', element => downRightY(element))
-        .attr('stroke', lineStroke)
-        .attr('stroke-width', lineWidth)
-        .attr('stroke-linecap', "round")
         .on("contextmenu", sideClickRight)
         .on('click', sideClickLeft)
 
@@ -44,9 +36,6 @@ d3.json("data/triangles.json")
         .attr('y1', element => downRightY(element))
         .attr('x2', element => downLeftX(element))
         .attr('y2', element => downLeftY(element))
-        .attr('stroke', lineStroke)
-        .attr('stroke-width', lineWidth)
-        .attr('stroke-linecap', "round")
         .on("contextmenu", baseClickRight)
         .on('click', baseClickLeft)
 
@@ -56,9 +45,6 @@ d3.json("data/triangles.json")
         .attr('y1', element => downLeftY(element))
         .attr('x2', element => topX(element))
         .attr('y2', element => topY(element))
-        .attr('stroke', lineStroke)
-        .attr('stroke-width', lineWidth)
-        .attr('stroke-linecap', "round")
         .on("contextmenu", sideClickRight)
         .on('click', sideClickLeft)
 
@@ -66,7 +52,7 @@ d3.json("data/triangles.json")
 
       triangleGroups
         .select('path')
-        .transition().duration(1000)
+        .transition().duration(animationDuration)
         .attr('d', element => trianglePath(element))
 
       triangleGroups
@@ -171,6 +157,8 @@ d3.json("data/triangles.json")
 
     let svg = createSvg()
     drawTriangles(dataset)
+
+
   })
   .catch(error => {
     console.log(error)

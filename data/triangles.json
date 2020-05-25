@@ -1,72 +1,72 @@
 [
   {
-    "horizontal_position": 700,
-    "vertical_position": 200,
-    "base_length": 100,
-    "sides_length": 150,
+    "horizontal_position": 50,
+    "vertical_position": 50,
+    "base_length": 45,
+    "sides_length": 30,
     "hue": "red"
   },
   {
-    "horizontal_position": 300,
-    "vertical_position": 100,
-    "base_length": 50,
-    "sides_length": 70,
+    "horizontal_position": 100,
+    "vertical_position": 80,
+    "base_length": 90,
+    "sides_length": 110,
     "hue": "orange"
   },
   {
-    "horizontal_position": 400,
-    "vertical_position": 60,
-    "base_length": 60,
-    "sides_length": 40,
+    "horizontal_position": 180,
+    "vertical_position": 150,
+    "base_length": 100,
+    "sides_length": 92,
     "hue": "grey"
   },
   {
-    "horizontal_position": 600,
-    "vertical_position": 65,
-    "base_length": 80,
-    "sides_length": 100,
+    "horizontal_position": 250,
+    "vertical_position": 180,
+    "base_length": 150,
+    "sides_length": 180,
     "hue": "yellow"
   },
   {
-    "horizontal_position": 45,
-    "vertical_position": 80,
-    "base_length": 50,
-    "sides_length": 60,
+    "horizontal_position": 300,
+    "vertical_position": 160,
+    "base_length": 310,
+    "sides_length": 200,
     "hue": "white"
   },
   {
-    "horizontal_position": 300,
+    "horizontal_position": 350,
     "vertical_position": 400,
-    "base_length": 90,
-    "sides_length": 110,
+    "base_length": 210,
+    "sides_length": 250,
     "hue": "violet"
   },
   {
-    "horizontal_position": 600,
-    "vertical_position": 500,
-    "base_length": 100,
-    "sides_length": 130,
+    "horizontal_position": 400,
+    "vertical_position": 260,
+    "base_length": 500,
+    "sides_length": 300,
     "hue": "blue"
   },
   {
-    "horizontal_position": 450,
-    "vertical_position": 350,
-    "base_length": 100,
-    "sides_length": 110,
+    "horizontal_position": 500,
+    "vertical_position": 600,
+    "base_length": 500,
+    "sides_length": 310,
     "hue": "brown"
   },
   {
-    "horizontal_position": 700,
+    "horizontal_position": 500,
     "vertical_position": 650,
-    "base_length": 60,
-    "sides_length": 90,
+    "base_length": 400,
+    "sides_length": 700,
     "hue": "gold"
   },
   {
-    "horizontal_position": 800,
-    "vertical_position": 400,
-    "base_length": 170,
-    "sides_length": 100,
+    "horizontal_position": 450,
+    "vertical_position": 700,
+    "base_length": 800,
+    "sides_length": 600,
     "hue": "silver"
   }
 ]

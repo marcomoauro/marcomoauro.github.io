@@ -1,0 +1,9 @@
+line {
+    stroke: black;
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+line:hover {
+    stroke: #FFFF00;
+}
