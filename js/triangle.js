@@ -19,7 +19,9 @@ d3.json("data/triangles.json")
 
       triangleGroupsEnter.append('path')
         .attr('d', element => trianglePath(element))
-        .attr('fill', element => element.hue)
+        .attr('fill', element => `hsl(${element.hue}, 100%, 50%)`)
+        .on('click', pathClickLeft)
+        .on("contextmenu", pathClickRight)
 
       triangleGroupsEnter.append('line')
         .attr('class', 'right_side')
@@ -27,8 +29,8 @@ d3.json("data/triangles.json")
         .attr('y1', element => topY(element))
         .attr('x2', element => downRightX(element))
         .attr('y2', element => downRightY(element))
-        .on("contextmenu", sideClickRight)
         .on('click', sideClickLeft)
+        .on("contextmenu", sideClickRight)
 
       triangleGroupsEnter.append('line')
         .attr('class', 'base')
@@ -36,8 +38,8 @@ d3.json("data/triangles.json")
         .attr('y1', element => downRightY(element))
         .attr('x2', element => downLeftX(element))
         .attr('y2', element => downLeftY(element))
-        .on("contextmenu", baseClickRight)
         .on('click', baseClickLeft)
+        .on("contextmenu", baseClickRight)
 
       triangleGroupsEnter.append('line')
         .attr('class', 'left_side')
@@ -45,8 +47,8 @@ d3.json("data/triangles.json")
         .attr('y1', element => downLeftY(element))
         .attr('x2', element => topX(element))
         .attr('y2', element => topY(element))
-        .on("contextmenu", sideClickRight)
         .on('click', sideClickLeft)
+        .on("contextmenu", sideClickRight)
 
       // update
 
@@ -54,6 +56,7 @@ d3.json("data/triangles.json")
         .select('path')
         .transition().duration(animationDuration)
         .attr('d', element => trianglePath(element))
+        .attr('fill', element => `hsl(${element.hue}, 100%, 50%)`)
 
       triangleGroups
         .select('.right_side')
@@ -82,6 +85,33 @@ d3.json("data/triangles.json")
       // exit
 
       triangleGroups.exit().remove()
+    }
+
+    let pathClickLeft = d => {
+      dataset = dataset.map(element => {
+        return {
+          'horizontal_position': element.horizontal_position,
+          "vertical_position": element.hue,
+          "base_length": element.base_length,
+          "sides_length": element.sides_length,
+          "hue": element.vertical_position
+        }
+      })
+      drawTriangles(dataset)
+    }
+
+    let pathClickRight = d => {
+      d3.event.preventDefault()
+      dataset = dataset.map(element => {
+        return {
+          'horizontal_position': element.hue,
+          "vertical_position": element.vertical_position,
+          "base_length": element.base_length,
+          "sides_length": element.sides_length,
+          "hue": element.horizontal_position
+        }
+      })
+      drawTriangles(dataset)
     }
 
     let baseClickLeft = d => {
@@ -157,8 +187,6 @@ d3.json("data/triangles.json")
 
     let svg = createSvg()
     drawTriangles(dataset)
-
-
   })
   .catch(error => {
     console.log(error)
