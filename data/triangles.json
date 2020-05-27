@@ -1,72 +1,72 @@
 [
   {
     "horizontal_position": 50,
-    "vertical_position": 50,
-    "base_length": 45,
+    "vertical_position": 45,
+    "base_length": 30,
     "sides_length": 30,
-    "hue": 30
+    "hue": 50
   },
   {
-    "horizontal_position": 100,
-    "vertical_position": 80,
-    "base_length": 90,
-    "sides_length": 110,
-    "hue": 60
+    "horizontal_position": 80,
+    "vertical_position": 90,
+    "base_length": 110,
+    "sides_length": 60,
+    "hue": 100
+  },
+  {
+    "horizontal_position": 150,
+    "vertical_position": 100,
+    "base_length": 92,
+    "sides_length": 95,
+    "hue": 180
   },
   {
     "horizontal_position": 180,
     "vertical_position": 150,
-    "base_length": 100,
-    "sides_length": 92,
-    "hue": 95
+    "base_length": 180,
+    "sides_length": 130,
+    "hue": 250
   },
   {
-    "horizontal_position": 250,
-    "vertical_position": 180,
-    "base_length": 150,
-    "sides_length": 180,
-    "hue": 130
-  },
-  {
-    "horizontal_position": 300,
-    "vertical_position": 160,
-    "base_length": 310,
-    "sides_length": 200,
-    "hue": 160
-  },
-  {
-    "horizontal_position": 350,
-    "vertical_position": 400,
-    "base_length": 210,
-    "sides_length": 250,
-    "hue": 225
+    "horizontal_position": 160,
+    "vertical_position": 310,
+    "base_length": 200,
+    "sides_length": 160,
+    "hue": 300
   },
   {
     "horizontal_position": 400,
-    "vertical_position": 260,
-    "base_length": 500,
-    "sides_length": 300,
-    "hue": 275
+    "vertical_position": 210,
+    "base_length": 250,
+    "sides_length": 225,
+    "hue": 350
   },
   {
-    "horizontal_position": 500,
-    "vertical_position": 600,
-    "base_length": 500,
-    "sides_length": 310,
-    "hue": 305
+    "horizontal_position": 260,
+    "vertical_position": 500,
+    "base_length": 300,
+    "sides_length": 275,
+    "hue": 400
   },
   {
-    "horizontal_position": 500,
-    "vertical_position": 650,
-    "base_length": 400,
-    "sides_length": 700,
-    "hue": 360
+    "horizontal_position": 600,
+    "vertical_position": 500,
+    "base_length": 310,
+    "sides_length": 305,
+    "hue": 500
   },
   {
-    "horizontal_position": 450,
-    "vertical_position": 700,
-    "base_length": 800,
-    "sides_length": 600,
-    "hue": 480
+    "horizontal_position": 650,
+    "vertical_position": 400,
+    "base_length": 700,
+    "sides_length": 360,
+    "hue": 500
+  },
+  {
+    "horizontal_position": 700,
+    "vertical_position": 800,
+    "base_length": 600,
+    "sides_length": 480,
+    "hue": 450
   }
 ]
