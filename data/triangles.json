@@ -22,10 +22,10 @@
   },
   {
     "horizontal_position": 180,
-    "vertical_position": 150,
-    "base_length": 180,
+    "vertical_position": 200,
+    "base_length": 250,
     "sides_length": 130,
-    "hue": 250
+    "hue": 150
   },
   {
     "horizontal_position": 160,
@@ -60,13 +60,13 @@
     "vertical_position": 400,
     "base_length": 700,
     "sides_length": 360,
-    "hue": 500
+    "hue": 635
   },
   {
     "horizontal_position": 700,
     "vertical_position": 800,
     "base_length": 600,
     "sides_length": 480,
-    "hue": 450
+    "hue": 610
   }
 ]
